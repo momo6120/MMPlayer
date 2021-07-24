@@ -1,11 +1,10 @@
-ï»¿# CMakeList.txt: MMPlayer çš„ CMake é¡¹ç›®ï¼Œåœ¨æ­¤å¤„åŒ…æ‹¬æºä»£ç å¹¶å®šä¹‰
-# é¡¹ç›®ç‰¹å®šçš„é€»è¾‘ã€‚
+# CMakeLists.txt: ¶¥²ã CMake ÏîÄ¿ÎÄ¼ş£¬ÔÚ´Ë´¦Ö´ĞĞÈ«¾ÖÅäÖÃ
+# ²¢°üº¬×ÓÏîÄ¿
 #
-cmake_minimum_required (VERSION 3.8)
+cmake_minimum_required(VERSION 3.8)
 
-project ("MMPlayer")
+project("MMPlayer")
 
-# å°†æºä»£ç æ·»åŠ åˆ°æ­¤é¡¹ç›®çš„å¯æ‰§è¡Œæ–‡ä»¶ã€‚
-add_executable (MMPlayer "MMPlayer.cpp" "MMPlayer.h")
-
-# TODO: å¦‚æœ‰éœ€è¦ï¼Œè¯·æ·»åŠ æµ‹è¯•å¹¶å®‰è£…ç›®æ ‡ã€‚
+# °üº¬×ÓÏîÄ¿
+add_subdirectory("MMPlayer")
+add_subdirectory("MMThread")
